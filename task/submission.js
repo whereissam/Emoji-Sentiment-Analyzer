@@ -28,8 +28,7 @@ class Submission {
     logger.info(`Starting task for round ${round}`);
     try {
       const data = await this.fetchDataFromSources([
-        'https://api.example.com/getEmojisWithContext1',
-        'https://api.example.com/getEmojisWithContext2'
+        'https://api.api-ninjas.com/v1/emoji',
       ]);
 
       const overallSentiment = this.calculateOverallSentiment(data);
